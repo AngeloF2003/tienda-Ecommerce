@@ -23,7 +23,7 @@ export class ProductsDetailStateService{
   state = signalSlice({
     initialState: this.initialState,
     actionSources: {
-      getByid: (_state, $: Observable<number>) =>
+      getByid: (_state, $: Observable<string>) =>
       $.pipe(
         switchMap((id) => this.ProductsService.getProduct(id)),
         map((data) => ({product: data, status: 'success' as const}))

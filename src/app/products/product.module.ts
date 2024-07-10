@@ -5,19 +5,22 @@ import { CommonModule } from "@angular/common";
 import { ProductsService } from "./data-acces/products.service";
 import { ProductCardComponent } from './ui/product-card/product-card.component';
 import ProductsDetailComponent from "./features/products-detail/products-detail.component";
+import { ProductsDetailStateService } from "./data-acces/products-detail-state.service";
 
 @NgModule({
 declarations: [
   ProductsListComponent,
   ProductsDetailComponent,
   ProductCardComponent,
+
 ],
 imports: [
   CommonModule,
   productoRouting,
 ],
 providers: [
-  ProductsService
+  ProductsService,
+  ProductsDetailStateService
 ]
 })
 export class ProductModule {

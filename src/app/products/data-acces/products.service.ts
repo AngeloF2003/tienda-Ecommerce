@@ -21,7 +21,7 @@ export class ProductsService extends BaseHttpService {
 
     );
   }
-  getProduct(id: number): Observable<Product>{
+  getProduct(id: string): Observable<Product>{
     return this.http.get<Product>('https://fakestoreapi.com/products');
 
     }
