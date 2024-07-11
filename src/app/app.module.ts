@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/ui/header/header.component';
 import { ProductModule } from './products/product.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
+import { productoCartRouting } from './cart/cart.routes';
+import { ProductCartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ProductModule,
-    HttpClientModule
+    HttpClientModule,
+    ProductCartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

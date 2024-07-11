@@ -12,7 +12,9 @@
 <div
 *ngFor="let product of productsState.state().products"
 >
-<app-product-card [product]="product" ></app-product-card>
+<app-product-card [product]="product"
+(addToCart)="addToCart($event)">
+</app-product-card>
 </div>
 
 </div>

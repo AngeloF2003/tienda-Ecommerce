@@ -17,6 +17,7 @@ declarations: [
 imports: [
   CommonModule,
   productoRouting,
+
 ],
 providers: [
   ProductsService,

@@ -18,7 +18,7 @@ export class ProductCardComponent {
 
   add(event: Event) {
     event.stopPropagation();
-    event.preventDefault()
-    this.addToCart.emit(this.product)
+    event.preventDefault();
+    this.addToCart.emit(this.product);
   }
 }
